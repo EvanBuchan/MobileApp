@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneTracker</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-tabs>
+
+      <ion-tab tab="Home">
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-title>TuneTracker</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>Music</h1>
+          <ion-card>
+            <ion-card-title>Welcome to TuneTracker!</ion-card-title>
+              <p>This app is made to let you look up albums you have listened to, and add them to a List for future reference.</p>
+              <p>To look for albums, please use the Search tab below.</p>
+              <p>To view the albums you have saved, please use the My List tab below.</p>
+          </ion-card>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab tab="Search">
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-title>TuneTracker</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>Search</h1>
+          <ion-searchbar></ion-searchbar>
+          <ion-list>
+            <ion-item button="true">
+              <ion-avatar slot="start" id="imgresult0">
+              </ion-avatar>
+              <ion-label id="apiresult0"> 
+                <h1></h1>
+                <h2></h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item button="true">
+              <ion-avatar slot="start" id="imgresult1">
+              </ion-avatar>
+              <ion-label id="apiresult1"> 
+                <h1></h1>
+                <h2></h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item button="true">
+              <ion-avatar slot="start" id="imgresult2">
+              </ion-avatar>
+              <ion-label id="apiresult2"> 
+                <h1></h1>
+                <h2></h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item button="true">
+              <ion-avatar slot="start" id="imgresult3">
+              </ion-avatar>
+              <ion-label id="apiresult3"> 
+                <h1></h1>
+                <h2></h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item button="true">
+              <ion-avatar slot="start" id="imgresult4">
+              </ion-avatar>
+              <ion-label id="apiresult4"> 
+                <h1></h1>
+                <h2></h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item button="true">
+              <ion-avatar slot="start" id="imgresult5">
+              </ion-avatar>
+              <ion-label id="apiresult5"> 
+                <h1></h1>
+                <h2></h2>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab tab="List">
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-title>TuneTracker</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>My List</h1>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="Home">
+          <ion-label>Home</ion-label>
+          <ion-icon name="home-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="Search">
+          <ion-label>Search</ion-label>
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="List">
+          <ion-label>My List</ion-label>
+          <ion-icon name="musical-note-outline"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    
+  </ion-app> 
+  <script src="app.js"></script>
+</body>
+</html>
