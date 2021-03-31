@@ -1,3 +1,3 @@
 # MobileApp
-This is where code for my Mobile Application development project (using JS, Ionic and Angular) will go.
-At the moment I do not have any code to show unfortunately, hopefully I will be able to have some up and running soon.
+This is code for my Mobile Application development project using JS and HTML (using the Ionic Framework).
+At the moment I still need to figure out correct implementation of the searchbar to allow browsing of the last.fm database, and saving data to the app for future reference.
