@@ -20,15 +20,16 @@
           <ion-toolbar color="primary">
             <ion-title>TuneTracker</ion-title>
           </ion-toolbar>
+          <br>
+          <ion-title>Welcome to TuneTracker!</ion-title>
+          <br>
         </ion-header>
 
         <ion-content>
-          <h1>Music</h1>
           <ion-card>
-            <ion-card-title>Welcome to TuneTracker!</ion-card-title>
-              <p>This app is made to let you look up albums you have listened to, and add them to a List for future reference.</p>
-              <p>To look for albums, please use the Search tab below.</p>
-              <p>To view the albums you have saved, please use the My List tab below.</p>
+            <ion-card-content>This app allows you to look at a selection of Beatles albums, taken from the last.fm database.</ion-card-content>
+            <ion-card-content>To filter these albums, please use the Search tab below.</ion-card-content>
+            <ion-card-content>Although this functionality is not yet implemented, the My List tab will allow you to look at 'saved' albums.</ion-card-content>
           </ion-card>
         </ion-content>
       </ion-tab>
@@ -39,160 +40,104 @@
           <ion-toolbar color="primary">
             <ion-title>TuneTracker</ion-title>
           </ion-toolbar>
+          <br>
+          <ion-title>Search</ion-title>
+        <ion-item>
+          <ion-label position ="floating" type ="string">Search for albums here</ion-label>
+          <ion-input id="query"></ion-input>
+        </ion-item>
         </ion-header>
 
         <ion-content>
-          <h1>Search</h1>
-        <ion-searchbar></ion-searchbar>
           <ion-list>
             <!--1st list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult0">
-              </ion-avatar>
-              <ion-label id="apiresult0"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult0"></ion-avatar>
+              <ion-label id="apiresult0"></ion-label>
             </ion-item>
 
             <!--2nd list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult1">
-              </ion-avatar>
-              <ion-label id="apiresult1"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult1"></ion-avatar>
+              <ion-label id="apiresult1"></ion-label>
             </ion-item>
 
             <!--3rd list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult2">
-              </ion-avatar>
-              <ion-label id="apiresult2"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult2"></ion-avatar>
+              <ion-label id="apiresult2"></ion-label>
             </ion-item>
 
             <!--4th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult3">
-              </ion-avatar>
-              <ion-label id="apiresult3"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult3"></ion-avatar>
+              <ion-label id="apiresult3"></ion-label>
             </ion-item>
 
             <!--5th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult4">
-              </ion-avatar>
-              <ion-label id="apiresult4"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult4"></ion-avatar>
+              <ion-label id="apiresult4"></ion-label>
             </ion-item>
 
             <!--6th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult5">
-              </ion-avatar>
-              <ion-label id="apiresult5"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult5"></ion-avatar>
+              <ion-label id="apiresult5"></ion-label>
             </ion-item>
 
             <!--7th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult6">
-              </ion-avatar>
-              <ion-label id="apiresult6"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult6"></ion-avatar>
+              <ion-label id="apiresult6"></ion-label>
             </ion-item>
 
             <!--8th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult7">
-              </ion-avatar>
-              <ion-label id="apiresult7"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult7"></ion-avatar>
+              <ion-label id="apiresult7"></ion-label>
             </ion-item>
 
             <!--9th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult8">
-              </ion-avatar>
-              <ion-label id="apiresult8"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult8"></ion-avatar>
+              <ion-label id="apiresult8"></ion-label>
             </ion-item>
             
             <!--10th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult9">
-              </ion-avatar>
-              <ion-label id="apiresult9"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult9"></ion-avatar>
+              <ion-label id="apiresult9"></ion-label>
             </ion-item>
 
             <!--11th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult10">
-              </ion-avatar>
-              <ion-label id="apiresult10"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult10"></ion-avatar>
+              <ion-label id="apiresult10"></ion-label>
             </ion-item>
 
             <!--12th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult11">
-              </ion-avatar>
-              <ion-label id="apiresult11"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult11"></ion-avatar>
+              <ion-label id="apiresult11"></ion-label>
             </ion-item>
 
             <!--13th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult12">
-              </ion-avatar>
-              <ion-label id="apiresult12"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult12"></ion-avatar>
+              <ion-label id="apiresult12"></ion-label>
             </ion-item>
 
             <!--14th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult13">
-              </ion-avatar>
-              <ion-label id="apiresult13"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult13"></ion-avatar>
+              <ion-label id="apiresult13"></ion-label>
             </ion-item>
 
             <!--15th list result-->
             <ion-item button="true">
-              <ion-avatar slot="start" id="imgresult14">
-              </ion-avatar>
-              <ion-label id="apiresult14"> 
-                <h1></h1>
-                <h2></h2>
-              </ion-label>
+              <ion-avatar slot="start" id="imgresult14"></ion-avatar>
+              <ion-label id="apiresult14"></ion-label>
             </ion-item>
           </ion-list>
         </ion-content>
@@ -204,14 +149,15 @@
           <ion-toolbar color="primary">
             <ion-title>TuneTracker</ion-title>
           </ion-toolbar>
+          <br>
+          <ion-title>My List</ion-title>
+          <br>
         </ion-header>
 
         <ion-content>
-          <h1>My List</h1>
-          <h2>Please check back later!</h2>
-          <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data...">
-          </ion-infinite-scroll-content>
-        </ion-infinite-scroll>
+          <ion-card>
+            <ion-card-content>This functionality has not been implemented.</ion-card-content>
+          </ion-card>
         </ion-content>
       </ion-tab>
 

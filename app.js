@@ -1,13 +1,13 @@
 // Variables for accessing last.fm API
 var apiKey = "046600dc854adf7ca0ccd3e69d02925a";
-var query=  "foo fighters";
+var query=  "beatles";
 var method = "album.search&album=";
 var url = "http://ws.audioscrobbler.com/2.0/?method=" + method + query + "&api_key=" + apiKey + "&format=json"; 
 console.log(url);
 
 
 // Filter down results from API search
-const searchbar = document.querySelector('ion-searchbar');
+const searchbar = document.querySelector('ion-input');
     const items = Array.from(document.querySelector('ion-list').children);
 
     searchbar.addEventListener('ionInput', handleInput);
@@ -21,6 +21,7 @@ const searchbar = document.querySelector('ion-searchbar');
         });
       });
     }
+
 
 // Search the api using the URL
 $.getJSON(url, function(data){
