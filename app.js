@@ -6,7 +6,7 @@ var url = "http://ws.audioscrobbler.com/2.0/?method=" + method + query + "&api_k
 console.log(url);
 
 
-// Filter down results from API search
+// Filter down results using searchbar
 const searchbar = document.querySelector('ion-input');
     const items = Array.from(document.querySelector('ion-list').children);
 
